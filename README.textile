@@ -6,14 +6,14 @@ h2. Instructions
 * The DB is full of tweets at this point, so all you need to do is run the server to see the Twitter archive
 * You can edit app/views/tweets/index.html.haml to customize the way information is displayed
 * To make a static html file for the museum, simply save the page's source in your browser :)
-* The full tweet object is accessible like this: Tweet.first.full_tweet['profile_image_url] (hint hint)
+* The full tweet object is accessible like this: Tweet.first.full_tweet['profile_image_url'] (hint hint)
 
 * There's a static file already saved in public/archive_by_alex.html (but you might dislike the simplistic html)
 
 h2. What code is there to see?
 
 * If you want to look around, you'd see there's only one Model (Tweet) that was scaffolded. 
-* The data was populated using the minimal script in db/seed.rb (and by running rake db:seed -- you shouldn't do this anymore)
+* The data was populated using the minimal script in db/seed.rb (and by running rake db:seed -- you run it anymore)
 * A helper method was created to generate links for hashtags and @mentions
 * index.html was removed, root route was directed to meets_controller
 * guess that's it
