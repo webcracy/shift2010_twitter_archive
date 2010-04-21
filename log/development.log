@@ -1,0 +1,2014 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (0.9ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateTweets (20100421013411)
+  [4;36;1mSQL (0.3ms)[0m   [0;1mCREATE TABLE "tweets" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar(255), "twitter_id" varchar(255), "status" varchar(255), "full_tweet" varchar(255), "published_at" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100421013411')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mPRAGMA index_list("tweets")[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12541701869) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/118886907/215368502_img_normal.jpg
+created_at: Tue, 20 Apr 2010 22:43:10 +0000
+from_user: vascocv
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Sessions and slides from @SHiFT (part 1) conf #shiftconf #SHIFT2010"
+id: 12541701869
+from_user_id: 5500502
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-20 22:43:10', '2010-04-21 01:40:25', 'vascocv', 12541701869, NULL, 'Sessions and slides from @SHiFT (part 1) conf #shiftconf #SHIFT2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12534575562) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/759879182/jorgeoliveira2009_normal.jpg
+created_at: Tue, 20 Apr 2010 19:59:23 +0000
+from_user: JorgeOliveira
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "agora com o video: SHiFT 2010 - Maker Households http://bit.ly/9p92RD #shiftconf"
+id: 12534575562
+from_user_id: 1717135
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-20 19:59:23', '2010-04-21 01:40:26', 'JorgeOliveira', 12534575562, NULL, 'agora com o video: SHiFT 2010 - Maker Households http://bit.ly/9p92RD #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12526776878) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/709788445/DSC_0019_normal.jpg
+created_at: Tue, 20 Apr 2010 17:01:07 +0000
+from_user: Feba
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @shiftconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12526776878
+from_user_id: 19353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://cotweet.com/?utm_source=sp1&quot; rel=&quot;nofollow&quot;&gt;CoTweet&lt;/a&gt;"
+', '2010-04-20 17:01:07', '2010-04-21 01:40:26', 'Feba', 12526776878, NULL, 'RT @shiftconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12525137925) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/629154339/IMG_0903_normal.JPG
+created_at: Tue, 20 Apr 2010 16:27:25 +0000
+from_user: EmeraldReilly
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Can''t wait RT @jordanesque: Excellent content at Rest Leadership Conf in Scottsdale. Next up, social media: shift into future. #RLC2010"
+id: 12525137925
+from_user_id: 69874585
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com/&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-20 16:27:25', '2010-04-21 01:40:26', 'EmeraldReilly', 12525137925, NULL, 'Can''t wait RT @jordanesque: Excellent content at Rest Leadership Conf in Scottsdale. Next up, social media: shift into future. #RLC2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12524786331) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/398695384/JP_normal.jpg
+created_at: Tue, 20 Apr 2010 16:20:19 +0000
+from_user: jordanesque
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Excellent content at Rest Leadership Conf in Scottsdale. Next up, social media: shift into future. /via @Firehouse_Subs #RLC2010 [agreed]"
+id: 12524786331
+from_user_id: 37929001
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-20 16:20:19', '2010-04-21 01:40:26', 'jordanesque', 12524786331, NULL, 'Excellent content at Rest Leadership Conf in Scottsdale. Next up, social media: shift into future. /via @Firehouse_Subs #RLC2010 [agreed]')[0m
+  [4;36;1mTweet Load (0.4ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12521259150) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/558165343/no_echo_twitter_normal.png
+created_at: Tue, 20 Apr 2010 15:10:19 +0000
+from_user: paulo_ribeiro
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @mbbl: I''m in it! :D RT @shiftconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12521259150
+from_user_id: 5369545
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://mobileways.de/gravity&quot; rel=&quot;nofollow&quot;&gt;Gravity&lt;/a&gt;"
+', '2010-04-20 15:10:19', '2010-04-21 01:40:26', 'paulo_ribeiro', 12521259150, NULL, 'RT @mbbl: I''m in it! :D RT @shiftconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12518788578) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/151473524/Fotografia_19_normal.jpg
+created_at: Tue, 20 Apr 2010 14:22:17 +0000
+from_user: pedromorais
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12518788578
+from_user_id: 530071
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://pond.pt/&quot; rel=&quot;nofollow&quot;&gt;Pond&lt;/a&gt;"
+', '2010-04-20 14:22:17', '2010-04-21 01:40:26', 'pedromorais', 12518788578, NULL, 'RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12518330792) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/98403188/foto_minha_normal.jpg
+created_at: Tue, 20 Apr 2010 14:13:14 +0000
+from_user: varandas
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @psousa: wow! RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12518330792
+from_user_id: 2850077
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-20 14:13:14', '2010-04-21 01:40:26', 'varandas', 12518330792, NULL, 'RT @psousa: wow! RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12518021793) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/809483058/hugo-cor_normal.png
+created_at: Tue, 20 Apr 2010 14:07:15 +0000
+from_user: hugocf
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf (via @SHiFTconf)"
+id: 12518021793
+from_user_id: 745654
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-20 14:07:15', '2010-04-21 01:40:26', 'hugocf', 12518021793, NULL, 'awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf (via @SHiFTconf)')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12517808161) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/61011447/Copy_of_Jason-000036_normal.jpg
+created_at: Tue, 20 Apr 2010 14:03:09 +0000
+from_user: lxvr
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12517808161
+from_user_id: 1069952
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-20 14:03:09', '2010-04-21 01:40:26', 'lxvr', 12517808161, NULL, 'RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12517768738) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/198992908/Bruce__2008__normal.JPG
+created_at: Tue, 20 Apr 2010 14:02:24 +0000
+from_user: BKneuer
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 28259699
+text: "@DaveMillner Re: all day video conf. &lt; Perhaps it is just the beginning of a longer term trend? Shift to different sustainable paradigm?"
+id: 12517768738
+from_user_id: 11693112
+to_user: DaveMillner
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-20 14:02:24', '2010-04-21 01:40:26', 'BKneuer', 12517768738, NULL, '@DaveMillner Re: all day video conf. &lt; Perhaps it is just the beginning of a longer term trend? Shift to different sustainable paradigm?')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12517179536) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/323029348/twitterProfilePhoto_normal.jpg
+created_at: Tue, 20 Apr 2010 13:50:56 +0000
+from_user: ulmi
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @catarino: nice! rt @psousa wow! RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12517179536
+from_user_id: 2815353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://pond.pt/&quot; rel=&quot;nofollow&quot;&gt;Pond&lt;/a&gt;"
+', '2010-04-20 13:50:56', '2010-04-21 01:40:26', 'ulmi', 12517179536, NULL, 'RT @catarino: nice! rt @psousa wow! RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12517089474) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/681152765/avatar_v1_normal.jpg
+created_at: Tue, 20 Apr 2010 13:49:09 +0000
+from_user: mbbl
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "I''m in it! :D RT @shiftconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12517089474
+from_user_id: 102798
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-20 13:49:09', '2010-04-21 01:40:26', 'mbbl', 12517089474, NULL, 'I''m in it! :D RT @shiftconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12516699058) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/80403662/Photo_2_normal.jpg
+created_at: Tue, 20 Apr 2010 13:41:14 +0000
+from_user: imhugo
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: ".@ctive_media on the background :P RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12516699058
+from_user_id: 4835964
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-20 13:41:14', '2010-04-21 01:40:26', 'imhugo', 12516699058, NULL, '.@ctive_media on the background :P RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12516461764) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/759879182/jorgeoliveira2009_normal.jpg
+created_at: Tue, 20 Apr 2010 13:36:24 +0000
+from_user: JorgeOliveira
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12516461764
+from_user_id: 1717135
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-20 13:36:24', '2010-04-21 01:40:26', 'JorgeOliveira', 12516461764, NULL, 'RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12516230457) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/508438497/_-pic_twitter_normal.jpg
+created_at: Tue, 20 Apr 2010 13:31:41 +0000
+from_user: catarino
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "niice! rt @psousa wow! RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12516230457
+from_user_id: 2139212
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-20 13:31:41', '2010-04-21 01:40:27', 'catarino', 12516230457, NULL, 'niice! rt @psousa wow! RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12516137086) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/288389602/n1076633550_192294_7562_normal.jpg
+created_at: Tue, 20 Apr 2010 13:29:53 +0000
+from_user: bschildt
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Me at 0:45! ;-) RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12516137086
+from_user_id: 4127480
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-20 13:29:53', '2010-04-21 01:40:27', 'bschildt', 12516137086, NULL, 'Me at 0:45! ;-) RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12516070358) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/463482602/CRW_9060_normal.jpg
+created_at: Tue, 20 Apr 2010 13:28:33 +0000
+from_user: dramalho
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @shiftconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12516070358
+from_user_id: 105749
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://cotweet.com/?utm_source=sp1&quot; rel=&quot;nofollow&quot;&gt;CoTweet&lt;/a&gt;"
+', '2010-04-20 13:28:33', '2010-04-21 01:40:27', 'dramalho', 12516070358, NULL, 'RT @shiftconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12516047643) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/685654136/Photo_on_2009-12-05_at_06.13_normal.jpg
+created_at: Tue, 20 Apr 2010 13:28:06 +0000
+from_user: trodrigues
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12516047643
+from_user_id: 69670
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;"
+', '2010-04-20 13:28:06', '2010-04-21 01:40:27', 'trodrigues', 12516047643, NULL, 'RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12515938624) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/427281819/avatar1_normal.jpg
+created_at: Tue, 20 Apr 2010 13:25:54 +0000
+from_user: psousa
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "wow! RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12515938624
+from_user_id: 24022
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-20 13:25:54', '2010-04-21 01:40:27', 'psousa', 12515938624, NULL, 'wow! RT @SHiFTconf: awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12515849814) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/641508080/shift2010_diy_normal.png
+created_at: Tue, 20 Apr 2010 13:24:06 +0000
+from_user: shiftconf
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf"
+id: 12515849814
+from_user_id: 527292
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://cotweet.com/?utm_source=sp1&quot; rel=&quot;nofollow&quot;&gt;CoTweet&lt;/a&gt;"
+', '2010-04-20 13:24:06', '2010-04-21 01:40:27', 'shiftconf', 12515849814, NULL, 'awesome video about SHiFT: http://cot.ag/9iIo2d by Kattia Hernandez #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12511167849) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/288389602/n1076633550_192294_7562_normal.jpg
+created_at: Tue, 20 Apr 2010 11:38:36 +0000
+from_user: bschildt
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @thinkorangept: still recovering from all the inspiration and information from SHiFT. when is the next one?:P #shift2010"
+id: 12511167849
+from_user_id: 4127480
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-20 11:38:36', '2010-04-21 01:40:27', 'bschildt', 12511167849, NULL, 'RT @thinkorangept: still recovering from all the inspiration and information from SHiFT. when is the next one?:P #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12511111727) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/712348719/logo4_bigger_normal.jpg
+created_at: Tue, 20 Apr 2010 11:37:04 +0000
+from_user: thinkorangept
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "still recovering from all the inspiration and information from SHiFT. when is the next one?:P #shift2010"
+id: 12511111727
+from_user_id: 3428464
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-20 11:37:04', '2010-04-21 01:40:27', 'thinkorangept', 12511111727, NULL, 'still recovering from all the inspiration and information from SHiFT. when is the next one?:P #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12483340558) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/62897240/2558806757_2d2cbb2c22_normal.jpg
+created_at: Mon, 19 Apr 2010 23:50:32 +0000
+from_user: ericstoller
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 9141653
+text: "@jpkirch @ACUHOI It''s also a bit of a conf cultural shift..encouraging ppl 2 tweet w/ their phones. Presenters need 2 know tht ths is good."
+id: 12483340558
+from_user_id: 243474
+to_user: jpkirch
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 23:50:32', '2010-04-21 01:40:27', 'ericstoller', 12483340558, NULL, '@jpkirch @ACUHOI It''s also a bit of a conf cultural shift..encouraging ppl 2 tweet w/ their phones. Presenters need 2 know tht ths is good.')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12469196723) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/665157331/foto_normal.jpg
+created_at: Mon, 19 Apr 2010 18:24:03 +0000
+from_user: hmmonteiro
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "WOW! RT @catarino: (AWESOME) Shift 2010 Conference in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010 by @bschildt"
+id: 12469196723
+from_user_id: 2354028
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 18:24:03', '2010-04-21 01:40:27', 'hmmonteiro', 12469196723, NULL, 'WOW! RT @catarino: (AWESOME) Shift 2010 Conference in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010 by @bschildt')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12468385921) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/809483058/hugo-cor_normal.png
+created_at: Mon, 19 Apr 2010 18:04:19 +0000
+from_user: hugocf
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 527292
+text: "@SHiFTconf sad to see http://2010.shift.pt/page/program lag behind todays'' new content updates for talks at slideshare, @bschildt, etc"
+id: 12468385921
+from_user_id: 745654
+to_user: shiftconf
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-19 18:04:19', '2010-04-21 01:40:27', 'hugocf', 12468385921, NULL, '@SHiFTconf sad to see http://2010.shift.pt/page/program lag behind todays'' new content updates for talks at slideshare, @bschildt, etc')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12466168824) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/508438497/_-pic_twitter_normal.jpg
+created_at: Mon, 19 Apr 2010 17:12:32 +0000
+from_user: catarino
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "(AWESOME) Shift 2010 Conference in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010 by @bschildt"
+id: 12466168824
+from_user_id: 2139212
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-19 17:12:32', '2010-04-21 01:40:27', 'catarino', 12466168824, NULL, '(AWESOME) Shift 2010 Conference in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010 by @bschildt')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12462912193) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/93740125/Afbeelding_074_normal.jpg
+created_at: Mon, 19 Apr 2010 16:01:13 +0000
+from_user: ErikDeBruijn
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @bschildt: Quick and Dirty new page with the Shift Illustrations: http://www.schildt.nl #ShiftConf #Shift2010 #IsThisConsideredSpamYet"
+id: 12462912193
+from_user_id: 7619646
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.netvibes.com/subscribe.php?module=Twitter&quot; rel=&quot;nofollow&quot;&gt;Netvibes&lt;/a&gt;"
+', '2010-04-19 16:01:13', '2010-04-21 01:40:27', 'ErikDeBruijn', 12462912193, NULL, 'RT @bschildt: Quick and Dirty new page with the Shift Illustrations: http://www.schildt.nl #ShiftConf #Shift2010 #IsThisConsideredSpamYet')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12461638998) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/440627064/mugshot_normal.jpg
+created_at: Mon, 19 Apr 2010 15:34:11 +0000
+from_user: hugobaeta
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Awesome! ;) RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010"
+id: 12461638998
+from_user_id: 41465909
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 15:34:11', '2010-04-21 01:40:27', 'hugobaeta', 12461638998, NULL, 'Awesome! ;) RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12461535706) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/641508080/shift2010_diy_normal.png
+created_at: Mon, 19 Apr 2010 15:32:00 +0000
+from_user: shiftconf
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @bschildt: Quick and Dirty new page with the Shift Illustrations: http://www.schildt.nl #ShiftConf #Shift2010 #IsThisConsideredSpamYet"
+id: 12461535706
+from_user_id: 527292
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.netvibes.com/subscribe.php?module=Twitter&quot; rel=&quot;nofollow&quot;&gt;Netvibes&lt;/a&gt;"
+', '2010-04-19 15:32:00', '2010-04-21 01:40:27', 'shiftconf', 12461535706, NULL, 'RT @bschildt: Quick and Dirty new page with the Shift Illustrations: http://www.schildt.nl #ShiftConf #Shift2010 #IsThisConsideredSpamYet')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12461237738) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/288389602/n1076633550_192294_7562_normal.jpg
+created_at: Mon, 19 Apr 2010 15:25:48 +0000
+from_user: bschildt
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Quick and Dirty new page with the Shift Illustrations: http://www.schildt.nl #ShiftConf #Shift2010 #IsThisConsideredSpamYet"
+id: 12461237738
+from_user_id: 4127480
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.netvibes.com/subscribe.php?module=Twitter&quot; rel=&quot;nofollow&quot;&gt;Netvibes&lt;/a&gt;"
+', '2010-04-19 15:25:48', '2010-04-21 01:40:28', 'bschildt', 12461237738, NULL, 'Quick and Dirty new page with the Shift Illustrations: http://www.schildt.nl #ShiftConf #Shift2010 #IsThisConsideredSpamYet')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12460269597) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/809483058/hugo-cor_normal.png
+created_at: Mon, 19 Apr 2010 15:05:49 +0000
+from_user: hugocf
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @AnaDataGirl: wow! Simply amazing! RT @shiftconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12460269597
+from_user_id: 745654
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 15:05:49', '2010-04-21 01:40:28', 'hugocf', 12460269597, NULL, 'RT @AnaDataGirl: wow! Simply amazing! RT @shiftconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12459661089) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/489768189/AnaTwitter2_normal.jpg
+created_at: Mon, 19 Apr 2010 14:53:32 +0000
+from_user: AnaDataGirl
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "wow! Simply amazing! RT @shiftconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12459661089
+from_user_id: 10239779
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 14:53:32', '2010-04-21 01:40:28', 'AnaDataGirl', 12459661089, NULL, 'wow! Simply amazing! RT @shiftconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12459144981) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/127208010/Img007_normal.jpg
+created_at: Mon, 19 Apr 2010 14:42:48 +0000
+from_user: rogerpcorreia
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT: @lxvr: RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010"
+id: 12459144981
+from_user_id: 10402417
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;"
+', '2010-04-19 14:42:48', '2010-04-21 01:40:28', 'rogerpcorreia', 12459144981, NULL, 'RT: @lxvr: RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458966619) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/370417935/lanelaser_thumbnail_normal.jpg
+created_at: Mon, 19 Apr 2010 14:39:07 +0000
+from_user: monstro
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @dbarradas: (this guy is just amazingly gifted! I love it!) :D RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010"
+id: 12458966619
+from_user_id: 46899
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 14:39:07', '2010-04-21 01:40:28', 'monstro', 12458966619, NULL, 'RT @dbarradas: (this guy is just amazingly gifted! I love it!) :D RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458772265) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/709788445/DSC_0019_normal.jpg
+created_at: Mon, 19 Apr 2010 14:35:14 +0000
+from_user: Feba
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @dbarradas: (this guy is just amazingly gifted! I love it!) :D RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010"
+id: 12458772265
+from_user_id: 19353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 14:35:14', '2010-04-21 01:40:28', 'Feba', 12458772265, NULL, 'RT @dbarradas: (this guy is just amazingly gifted! I love it!) :D RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458667420) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/323380332/twitterProfilePhoto_normal.jpg
+created_at: Mon, 19 Apr 2010 14:33:05 +0000
+from_user: brunoamaral
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @psousa: @bschildt rules!RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12458667420
+from_user_id: 4918
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://destroytwitter.com/&quot; rel=&quot;nofollow&quot;&gt;DestroyTwitter&lt;/a&gt;"
+', '2010-04-19 14:33:05', '2010-04-21 01:40:28', 'brunoamaral', 12458667420, NULL, 'RT @psousa: @bschildt rules!RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458607451) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/433211163/kxhlift_normal.jpg
+created_at: Mon, 19 Apr 2010 14:31:50 +0000
+from_user: xhakli
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12458607451
+from_user_id: 100882
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-19 14:31:50', '2010-04-21 01:40:28', 'xhakli', 12458607451, NULL, 'RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458524444) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/336725545/Picture_1_normal.png
+created_at: Mon, 19 Apr 2010 14:30:12 +0000
+from_user: miguelfteixeira
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @shiftconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12458524444
+from_user_id: 21185686
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://cotweet.com/?utm_source=sp1&quot; rel=&quot;nofollow&quot;&gt;CoTweet&lt;/a&gt;"
+', '2010-04-19 14:30:12', '2010-04-21 01:40:28', 'miguelfteixeira', 12458524444, NULL, 'RT @shiftconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458455175) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/427281819/avatar1_normal.jpg
+created_at: Mon, 19 Apr 2010 14:28:47 +0000
+from_user: psousa
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 4127480
+text: "@bschildt rules! RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12458455175
+from_user_id: 24022
+to_user: bschildt
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-19 14:28:47', '2010-04-21 01:40:28', 'psousa', 12458455175, NULL, '@bschildt rules! RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458362697) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/323029348/twitterProfilePhoto_normal.jpg
+created_at: Mon, 19 Apr 2010 14:26:55 +0000
+from_user: ulmi
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12458362697
+from_user_id: 2815353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://pond.pt/&quot; rel=&quot;nofollow&quot;&gt;Pond&lt;/a&gt;"
+', '2010-04-19 14:26:55', '2010-04-21 01:40:28', 'ulmi', 12458362697, NULL, 'RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458200964) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/61011447/Copy_of_Jason-000036_normal.jpg
+created_at: Mon, 19 Apr 2010 14:23:36 +0000
+from_user: lxvr
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010"
+id: 12458200964
+from_user_id: 1069952
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-19 14:23:36', '2010-04-21 01:40:28', 'lxvr', 12458200964, NULL, 'RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458125209) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/685654136/Photo_on_2009-12-05_at_06.13_normal.jpg
+created_at: Mon, 19 Apr 2010 14:22:00 +0000
+from_user: trodrigues
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12458125209
+from_user_id: 69670
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;"
+', '2010-04-19 14:22:00', '2010-04-21 01:40:28', 'trodrigues', 12458125209, NULL, 'RT @SHiFTconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458117243) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/463482602/CRW_9060_normal.jpg
+created_at: Mon, 19 Apr 2010 14:21:50 +0000
+from_user: dramalho
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @shiftconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12458117243
+from_user_id: 105749
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://cotweet.com/?utm_source=sp1&quot; rel=&quot;nofollow&quot;&gt;CoTweet&lt;/a&gt;"
+', '2010-04-19 14:21:50', '2010-04-21 01:40:28', 'dramalho', 12458117243, NULL, 'RT @shiftconf: Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12458073621) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/56072168/daniel_48x48_normal.png
+created_at: Mon, 19 Apr 2010 14:20:54 +0000
+from_user: dbarradas
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "(this guy is just amazingly gifted! I love it!) :D RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010"
+id: 12458073621
+from_user_id: 825059
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 14:20:54', '2010-04-21 01:40:28', 'dbarradas', 12458073621, NULL, '(this guy is just amazingly gifted! I love it!) :D RT @bschildt: Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12457933824) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/288389602/n1076633550_192294_7562_normal.jpg
+created_at: Mon, 19 Apr 2010 14:18:01 +0000
+from_user: bschildt
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010"
+id: 12457933824
+from_user_id: 4127480
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 14:18:01', '2010-04-21 01:40:29', 'bschildt', 12457933824, NULL, 'Shift 2010 in illustrations. http://cot.ag/bZ7LR1 #ShiftConf #Shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12457871069) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/641508080/shift2010_diy_normal.png
+created_at: Mon, 19 Apr 2010 14:16:42 +0000
+from_user: shiftconf
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf"
+id: 12457871069
+from_user_id: 527292
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://cotweet.com/?utm_source=sp1&quot; rel=&quot;nofollow&quot;&gt;CoTweet&lt;/a&gt;"
+', '2010-04-19 14:16:42', '2010-04-21 01:40:29', 'shiftconf', 12457871069, NULL, 'Bauke Schildt''s amazing illustrations from SHiFT 2010: http://cot.ag/bZ7LR1 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12457724888) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/323029348/twitterProfilePhoto_normal.jpg
+created_at: Mon, 19 Apr 2010 14:13:42 +0000
+from_user: ulmi
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT2010: &quot;A SHiFT in Wine&quot; Andr\xC3\xA9''s inspiring presentation @shiftconf http://bit.ly/cczF62"
+id: 12457724888
+from_user_id: 2815353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://bit.ly&quot; rel=&quot;nofollow&quot;&gt;bit.ly&lt;/a&gt;"
+', '2010-04-19 14:13:42', '2010-04-21 01:40:29', 'ulmi', 12457724888, NULL, 'SHiFT2010: &quot;A SHiFT in Wine&quot; André''s inspiring presentation @shiftconf http://bit.ly/cczF62')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12451490518) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/463482602/CRW_9060_normal.jpg
+created_at: Mon, 19 Apr 2010 11:53:41 +0000
+from_user: dramalho
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @jsierles: Presentation slides from Shift 2010: Working from the Road http://bit.ly/cez5rk #shift2010"
+id: 12451490518
+from_user_id: 105749
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://adium.im&quot; rel=&quot;nofollow&quot;&gt;Adium&lt;/a&gt;"
+', '2010-04-19 11:53:41', '2010-04-21 01:40:29', 'dramalho', 12451490518, NULL, 'RT @jsierles: Presentation slides from Shift 2010: Working from the Road http://bit.ly/cez5rk #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12451462538) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/56072168/daniel_48x48_normal.png
+created_at: Mon, 19 Apr 2010 11:52:56 +0000
+from_user: dbarradas
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "(great presentation btw!) RT @jsierles: Presentation slides from Shift 2010: Working from the Road http://bit.ly/cez5rk #shift2010"
+id: 12451462538
+from_user_id: 825059
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-19 11:52:56', '2010-04-21 01:40:29', 'dbarradas', 12451462538, NULL, '(great presentation btw!) RT @jsierles: Presentation slides from Shift 2010: Working from the Road http://bit.ly/cez5rk #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12451327493) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/16731712/picture-1771_normal.gif
+created_at: Mon, 19 Apr 2010 11:49:32 +0000
+from_user: sergio
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @jsierles: Presentation slides from Shift 2010: Working from the Road http://bit.ly/cez5rk #shift2010"
+id: 12451327493
+from_user_id: 199113
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://adium.im&quot; rel=&quot;nofollow&quot;&gt;Adium&lt;/a&gt;"
+', '2010-04-19 11:49:32', '2010-04-21 01:40:29', 'sergio', 12451327493, NULL, 'RT @jsierles: Presentation slides from Shift 2010: Working from the Road http://bit.ly/cez5rk #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12450559235) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/759879182/jorgeoliveira2009_normal.jpg
+created_at: Mon, 19 Apr 2010 11:28:17 +0000
+from_user: JorgeOliveira
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "a great presentation :) @jsierles: Presentation slides from Shift 2010: Working from the Road http://bit.ly/cez5rk #shift2010"
+id: 12450559235
+from_user_id: 1717135
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-19 11:28:17', '2010-04-21 01:40:29', 'JorgeOliveira', 12450559235, NULL, 'a great presentation :) @jsierles: Presentation slides from Shift 2010: Working from the Road http://bit.ly/cez5rk #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12420016588) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/681152765/avatar_v1_normal.jpg
+created_at: Sun, 18 Apr 2010 21:58:08 +0000
+from_user: mbbl
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @ananeves: comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf"
+id: 12420016588
+from_user_id: 102798
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-18 21:58:08', '2010-04-21 01:40:29', 'mbbl', 12420016588, NULL, 'RT @ananeves: comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12419693019) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/433211163/kxhlift_normal.jpg
+created_at: Sun, 18 Apr 2010 21:50:14 +0000
+from_user: xhakli
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @ananeves: comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shiftconf"
+id: 12419693019
+from_user_id: 100882
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-18 21:50:14', '2010-04-21 01:40:29', 'xhakli', 12419693019, NULL, 'RT @ananeves: comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12418757937) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/56072168/daniel_48x48_normal.png
+created_at: Sun, 18 Apr 2010 21:27:55 +0000
+from_user: dbarradas
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @ananeves: about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf"
+id: 12418757937
+from_user_id: 825059
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-18 21:27:55', '2010-04-21 01:40:29', 'dbarradas', 12418757937, NULL, 'RT @ananeves: about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12418391140) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/759879182/jorgeoliveira2009_normal.jpg
+created_at: Sun, 18 Apr 2010 21:19:26 +0000
+from_user: JorgeOliveira
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @ananeves: comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf"
+id: 12418391140
+from_user_id: 1717135
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-18 21:19:26', '2010-04-21 01:40:29', 'JorgeOliveira', 12418391140, NULL, 'RT @ananeves: comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12409580114) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/98403188/foto_minha_normal.jpg
+created_at: Sun, 18 Apr 2010 17:56:44 +0000
+from_user: varandas
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Inspiradora a confer\xC3\xAAncia SHiFT 2010, a repetir pr\xC3\xB3 ano #shift2010"
+id: 12409580114
+from_user_id: 2850077
+geo: 
+iso_language_code: pt
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-18 17:56:44', '2010-04-21 01:40:29', 'varandas', 12409580114, NULL, 'Inspiradora a conferência SHiFT 2010, a repetir pró ano #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12395319690) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/51925313/f1_normal.jpg
+created_at: Sun, 18 Apr 2010 12:38:38 +0000
+from_user: ciberesfera
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @ananeves: comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf"
+id: 12395319690
+from_user_id: 146431
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-18 12:38:38', '2010-04-21 01:40:29', 'ciberesfera', 12395319690, NULL, 'RT @ananeves: comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12392467974) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/427281819/avatar1_normal.jpg
+created_at: Sun, 18 Apr 2010 11:07:43 +0000
+from_user: psousa
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "woke up a bit tired but feeling so awesome. hoping to see some great photos, videos and comments from SHiFT. #shift2010"
+id: 12392467974
+from_user_id: 24022
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-18 11:07:43', '2010-04-21 01:40:29', 'psousa', 12392467974, NULL, 'woke up a bit tired but feeling so awesome. hoping to see some great photos, videos and comments from SHiFT. #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12392399082) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/195853274/ana-profilephoto_normal.jpg
+created_at: Sun, 18 Apr 2010 11:05:14 +0000
+from_user: ananeves
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf"
+id: 12392399082
+from_user_id: 1536804
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-18 11:05:14', '2010-04-21 01:40:29', 'ananeves', 12392399082, NULL, 'comments about SHiFT 2010 and slides I used when sharing my experience of doing it myself. http://bit.ly/a83b83 #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12360337001) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/195853274/ana-profilephoto_normal.jpg
+created_at: Sat, 17 Apr 2010 20:42:11 +0000
+from_user: ananeves
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT is over! thank you, organisation team, for all your hard work - it paid off. Are we getting together again next year? #shift2010"
+id: 12360337001
+from_user_id: 1536804
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com/&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-17 20:42:11', '2010-04-21 01:40:30', 'ananeves', 12360337001, NULL, 'SHiFT is over! thank you, organisation team, for all your hard work - it paid off. Are we getting together again next year? #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12357151832) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/463482602/CRW_9060_normal.jpg
+created_at: Sat, 17 Apr 2010 19:19:05 +0000
+from_user: dramalho
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Home after what was,for me,a super shift 2010,it was terrific and I need to have some quiet words with @pedrocustodio :D thank U #shift2010"
+id: 12357151832
+from_user_id: 105749
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-17 19:19:05', '2010-04-21 01:40:30', 'dramalho', 12357151832, NULL, 'Home after what was,for me,a super shift 2010,it was terrific and I need to have some quiet words with @pedrocustodio :D thank U #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12347475383) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/418240641/amaia_normal.jpg
+created_at: Sat, 17 Apr 2010 15:45:41 +0000
+from_user: amaiamuro
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @dramalho: RT @microft: no volcano can stop #shiftconf Presentations over video conference for speakers that could not be present. #shift"
+id: 12347475383
+from_user_id: 8653456
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.snaptu.com/a/twitter&quot; rel=&quot;nofollow&quot;&gt;Snaptu&lt;/a&gt;"
+', '2010-04-17 15:45:41', '2010-04-21 01:40:30', 'amaiamuro', 12347475383, NULL, 'RT @dramalho: RT @microft: no volcano can stop #shiftconf Presentations over video conference for speakers that could not be present. #shift')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12343555182) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/681152765/avatar_v1_normal.jpg
+created_at: Sat, 17 Apr 2010 14:25:30 +0000
+from_user: mbbl
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @Feba: now Lane Becker on the stage (http://2010.shift.pt/talk/show/116 ) #shift2010"
+id: 12343555182
+from_user_id: 102798
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-17 14:25:30', '2010-04-21 01:40:30', 'mbbl', 12343555182, NULL, 'RT @Feba: now Lane Becker on the stage (http://2010.shift.pt/talk/show/116 ) #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12343076809) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/709788445/DSC_0019_normal.jpg
+created_at: Sat, 17 Apr 2010 14:15:17 +0000
+from_user: Feba
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "now Lane Becker on the stage (http://2010.shift.pt/talk/show/116 ) #shift2010"
+id: 12343076809
+from_user_id: 19353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-17 14:15:17', '2010-04-21 01:40:30', 'Feba', 12343076809, NULL, 'now Lane Becker on the stage (http://2010.shift.pt/talk/show/116 ) #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12342412250) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/433211163/kxhlift_normal.jpg
+created_at: Sat, 17 Apr 2010 14:00:49 +0000
+from_user: xhakli
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Just watched Personal Fabrication video http://2010.shift.pt/talk/show/106 #shiftconf #shift2010"
+id: 12342412250
+from_user_id: 100882
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-17 14:00:49', '2010-04-21 01:40:30', 'xhakli', 12342412250, NULL, 'Just watched Personal Fabrication video http://2010.shift.pt/talk/show/106 #shiftconf #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12337300192) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/558165343/no_echo_twitter_normal.png
+created_at: Sat, 17 Apr 2010 11:44:58 +0000
+from_user: paulo_ribeiro
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Qik - Pedro Markun @ SHiFT 2010 by Paulo Ribeiro http://qik.ly/BI9gu @shiftconf #shift2010"
+id: 12337300192
+from_user_id: 5369545
+geo: !map:HashWithIndifferentAccess 
+ coordinates: 
+ - 38.7334
+ - -9.1465
+ type: Point
+iso_language_code: en
+source: "&lt;a href=&quot;http://mobileways.de/gravity&quot; rel=&quot;nofollow&quot;&gt;Gravity&lt;/a&gt;"
+', '2010-04-17 11:44:58', '2010-04-21 01:40:30', 'paulo_ribeiro', 12337300192, NULL, 'Qik - Pedro Markun @ SHiFT 2010 by Paulo Ribeiro http://qik.ly/BI9gu @shiftconf #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12335909571) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/427281819/avatar1_normal.jpg
+created_at: Sat, 17 Apr 2010 10:57:19 +0000
+from_user: psousa
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "can you find all the movie references in the SHiFT staff''s t-shirts? #shift2010"
+id: 12335909571
+from_user_id: 24022
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-17 10:57:19', '2010-04-21 01:40:30', 'psousa', 12335909571, NULL, 'can you find all the movie references in the SHiFT staff''s t-shirts? #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12335484293) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/103989876/dejan_p_normal.jpg
+created_at: Sat, 17 Apr 2010 10:41:36 +0000
+from_user: dejand
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "My favourite of the day 1 at #shift2010 - Andre with a shift in wines"
+id: 12335484293
+from_user_id: 16330763
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-17 10:41:36', '2010-04-21 01:40:30', 'dejand', 12335484293, NULL, 'My favourite of the day 1 at #shift2010 - Andre with a shift in wines')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12334647781) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/555789413/me_at_twitter_normal.jpg
+created_at: Sat, 17 Apr 2010 10:10:07 +0000
+from_user: andr3
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "watch @vascellari rock the stage at SHiFT 2010 yesterday. http://2th6.sl.pt #shiftconf #fb"
+id: 12334647781
+from_user_id: 73888
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-17 10:10:07', '2010-04-21 01:40:30', 'andr3', 12334647781, NULL, 'watch @vascellari rock the stage at SHiFT 2010 yesterday. http://2th6.sl.pt #shiftconf #fb')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12334578112) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/681152765/avatar_v1_normal.jpg
+created_at: Sat, 17 Apr 2010 10:07:29 +0000
+from_user: mbbl
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "I''m attending &quot;How to stay soft in a world gone hard&quot; #shift2010 RT @SHiFTconf : SHiFT 2010: @yasmina , @ruimm and @elmine"
+id: 12334578112
+from_user_id: 102798
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://mobileways.de/gravity&quot; rel=&quot;nofollow&quot;&gt;Gravity&lt;/a&gt;"
+', '2010-04-17 10:07:29', '2010-04-21 01:40:30', 'mbbl', 12334578112, NULL, 'I''m attending &quot;How to stay soft in a world gone hard&quot; #shift2010 RT @SHiFTconf : SHiFT 2010: @yasmina , @ruimm and @elmine')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12332063413) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/759879182/jorgeoliveira2009_normal.jpg
+created_at: Sat, 17 Apr 2010 08:31:49 +0000
+from_user: JorgeOliveira
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Bom dia e at\xC3\xA9 j\xC3\xA1 @shiftconf: SHiFT 2010 - 2nd day schedule UPDATE -&gt; http://bit.ly/9gIycC #shift2010 #shiftconf"
+id: 12332063413
+from_user_id: 1717135
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-17 08:31:49', '2010-04-21 01:40:30', 'JorgeOliveira', 12332063413, NULL, 'Bom dia e até já @shiftconf: SHiFT 2010 - 2nd day schedule UPDATE -&gt; http://bit.ly/9gIycC #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12329882679) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/641508080/shift2010_diy_normal.png
+created_at: Sat, 17 Apr 2010 07:12:24 +0000
+from_user: shiftconf
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT 2010 - 2nd day schedule UPDATE -&gt; http://bit.ly/9gIycC #shift2010 #shiftconf"
+id: 12329882679
+from_user_id: 527292
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-17 07:12:24', '2010-04-21 01:40:30', 'shiftconf', 12329882679, NULL, 'SHiFT 2010 - 2nd day schedule UPDATE -&gt; http://bit.ly/9gIycC #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12317862880) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/836736682/DSC_7600_normal.JPG
+created_at: Sat, 17 Apr 2010 02:06:55 +0000
+from_user: pedromfs
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "New post on blog: Shift 2010 - Day 1 http://bit.ly/b29efa #shift2010 #shiftconf"
+id: 12317862880
+from_user_id: 185093
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://seesmic.com/app&quot; rel=&quot;nofollow&quot;&gt;Seesmic Web&lt;/a&gt;"
+', '2010-04-17 02:06:55', '2010-04-21 01:40:30', 'pedromfs', 12317862880, NULL, 'New post on blog: Shift 2010 - Day 1 http://bit.ly/b29efa #shift2010 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12315047721) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/56072168/daniel_48x48_normal.png
+created_at: Sat, 17 Apr 2010 01:06:57 +0000
+from_user: dbarradas
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k"
+id: 12315047721
+from_user_id: 825059
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;"
+', '2010-04-17 01:06:57', '2010-04-21 01:40:30', 'dbarradas', 12315047721, NULL, 'RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12305914794) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/591623644/filippo-ronco-fil_normal.jpg
+created_at: Fri, 16 Apr 2010 21:40:34 +0000
+from_user: filipporonco
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k"
+id: 12305914794
+from_user_id: 1480732
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-16 21:40:34', '2010-04-21 01:40:32', 'filipporonco', 12305914794, NULL, 'RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12303930637) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/599615144/bil_normal.jpg
+created_at: Fri, 16 Apr 2010 20:53:04 +0000
+from_user: ricardojrsousa
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 4382440
+text: "@fredericolucas a #shiftconf \xC3\xA9 uma outra confer\xC3\xAAncia onde estou como participante www.shift.pt a da @switchconf continua a ser #switchconf"
+id: 12303930637
+from_user_id: 3166478
+to_user: fredericolucas
+geo: 
+iso_language_code: pt
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-16 20:53:04', '2010-04-21 01:40:32', 'ricardojrsousa', 12303930637, NULL, '@fredericolucas a #shiftconf é uma outra conferência onde estou como participante www.shift.pt a da @switchconf continua a ser #switchconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12301863638) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/88409407/sml_logo_normal_bigger_normal.jpg
+created_at: Fri, 16 Apr 2010 20:03:50 +0000
+from_user: cortesdecima
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @vanessaquiterio: thanks for the sharing: RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k"
+id: 12301863638
+from_user_id: 357773
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-16 20:03:50', '2010-04-21 01:40:32', 'cortesdecima', 12301863638, NULL, 'RT @vanessaquiterio: thanks for the sharing: RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12300832401) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/89259811/hugo.mendes_gmail.com_97fe57bd_normal.jpg
+created_at: Fri, 16 Apr 2010 19:39:24 +0000
+from_user: hmendes
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "''Holy shift''! Can''t wait to see it in action. RT @tag_fablab RepRap.org ''s free desktop 3D printer @SHiFTconf: http://qik.com/video/6093370"
+id: 12300832401
+from_user_id: 3887770
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://apiwiki.twitter.com/&quot; rel=&quot;nofollow&quot;&gt;API&lt;/a&gt;"
+', '2010-04-16 19:39:24', '2010-04-21 01:40:32', 'hmendes', 12300832401, NULL, '''Holy shift''! Can''t wait to see it in action. RT @tag_fablab RepRap.org ''s free desktop 3D printer @SHiFTconf: http://qik.com/video/6093370')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12300373388) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/51925313/f1_normal.jpg
+created_at: Fri, 16 Apr 2010 19:28:34 +0000
+from_user: ciberesfera
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k"
+id: 12300373388
+from_user_id: 146431
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;"
+', '2010-04-16 19:28:34', '2010-04-21 01:40:32', 'ciberesfera', 12300373388, NULL, 'RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12300107099) LIMIT 1[0m
+  [4;35;1mTweet Create (2.0ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/391991184/twitterProfilePhoto_normal.jpg
+created_at: Fri, 16 Apr 2010 19:22:13 +0000
+from_user: bpedro
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k"
+id: 12300107099
+from_user_id: 13800
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;"
+', '2010-04-16 19:22:13', '2010-04-21 01:40:32', 'bpedro', 12300107099, NULL, 'RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12299790285) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/725408578/3215_1083145171905_1624631019_197686_1489528_n_normal.jpg
+created_at: Fri, 16 Apr 2010 19:14:49 +0000
+from_user: vanessaquiterio
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "thanks for the sharing: RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k"
+id: 12299790285
+from_user_id: 1938652
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-16 19:14:49', '2010-04-21 01:40:32', 'vanessaquiterio', 12299790285, NULL, 'thanks for the sharing: RT @andrerib: &quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12299704398) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/396354986/andre_ribeirinho_n_normal.jpg
+created_at: Fri, 16 Apr 2010 19:12:48 +0000
+from_user: andrerib
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "&quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k"
+id: 12299704398
+from_user_id: 63832
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;"
+', '2010-04-16 19:12:48', '2010-04-21 01:40:32', 'andrerib', 12299704398, NULL, '&quot;A SHiFT in Wine&quot;. My #shift2010 conference presentation. http://bit.ly/b6y50k')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12297387261) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/759879182/jorgeoliveira2009_normal.jpg
+created_at: Fri, 16 Apr 2010 18:19:51 +0000
+from_user: JorgeOliveira
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "impress\xC3\xB5es do primeiro dia @active_media: No blog: A Shift na Aldeia Global http://bit.ly/b2iMiZ #shiftconf #shift2010"
+id: 12297387261
+from_user_id: 1717135
+geo: 
+iso_language_code: pt
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-16 18:19:51', '2010-04-21 01:40:32', 'JorgeOliveira', 12297387261, NULL, 'impressões do primeiro dia @active_media: No blog: A Shift na Aldeia Global http://bit.ly/b2iMiZ #shiftconf #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12289507787) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/529117291/DSCN3950_normal.png
+created_at: Fri, 16 Apr 2010 15:40:33 +0000
+from_user: telmodias
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @Feba: now sara batalha is teaching us how to webcast ourselves in 5 minutes or so... (http://2010.shift.pt/talk/show/142 ) #shift2010"
+id: 12289507787
+from_user_id: 609229
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-16 15:40:33', '2010-04-21 01:40:32', 'telmodias', 12289507787, NULL, 'RT @Feba: now sara batalha is teaching us how to webcast ourselves in 5 minutes or so... (http://2010.shift.pt/talk/show/142 ) #shift2010')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12289230232) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/709788445/DSC_0019_normal.jpg
+created_at: Fri, 16 Apr 2010 15:35:18 +0000
+from_user: Feba
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "now sara batalha is teaching us how to webcast ourselves in 5 minutes or so... (http://2010.shift.pt/talk/show/142 ) #shift2010"
+id: 12289230232
+from_user_id: 19353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-16 15:35:18', '2010-04-21 01:40:32', 'Feba', 12289230232, NULL, 'now sara batalha is teaching us how to webcast ourselves in 5 minutes or so... (http://2010.shift.pt/talk/show/142 ) #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12285482222) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/51925313/f1_normal.jpg
+created_at: Fri, 16 Apr 2010 14:25:02 +0000
+from_user: ciberesfera
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT to Sustainable Prosperity, Ken Nunes #shift2010"
+id: 12285482222
+from_user_id: 146431
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com/&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-16 14:25:02', '2010-04-21 01:40:32', 'ciberesfera', 12285482222, NULL, 'SHiFT to Sustainable Prosperity, Ken Nunes #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12283037590) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/599615144/bil_normal.jpg
+created_at: Fri, 16 Apr 2010 13:37:18 +0000
+from_user: ricardojrsousa
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @Feba: amazing andrea vascellari talking about branding today (http://2010.shift.pt/talk/show/131 ) on the stage #shift2010"
+id: 12283037590
+from_user_id: 3166478
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-16 13:37:18', '2010-04-21 01:40:32', 'ricardojrsousa', 12283037590, NULL, 'RT @Feba: amazing andrea vascellari talking about branding today (http://2010.shift.pt/talk/show/131 ) on the stage #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12282973963) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/681152765/avatar_v1_normal.jpg
+created_at: Fri, 16 Apr 2010 13:36:01 +0000
+from_user: mbbl
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @Feba: amazing andrea vascellari talking about branding today (http://2010.shift.pt/talk/show/131 ) on the stage #shift2010"
+id: 12282973963
+from_user_id: 102798
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-16 13:36:01', '2010-04-21 01:40:32', 'mbbl', 12282973963, NULL, 'RT @Feba: amazing andrea vascellari talking about branding today (http://2010.shift.pt/talk/show/131 ) on the stage #shift2010')[0m
+  [4;36;1mTweet Load (0.6ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12282742403) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/709788445/DSC_0019_normal.jpg
+created_at: Fri, 16 Apr 2010 13:31:18 +0000
+from_user: Feba
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "amazing andrea vascellari talking about branding today (http://2010.shift.pt/talk/show/131 ) on the stage #shift2010"
+id: 12282742403
+from_user_id: 19353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-16 13:31:18', '2010-04-21 01:40:32', 'Feba', 12282742403, NULL, 'amazing andrea vascellari talking about branding today (http://2010.shift.pt/talk/show/131 ) on the stage #shift2010')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12281075530) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/80403662/Photo_2_normal.jpg
+created_at: Fri, 16 Apr 2010 12:56:48 +0000
+from_user: imhugo
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT is starting with some delay and with some low mood, I might say... Manuel Heitor on stage right now #shiftconf"
+id: 12281075530
+from_user_id: 4835964
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweets60.com&quot; rel=&quot;nofollow&quot;&gt;Tweets60&lt;/a&gt;"
+', '2010-04-16 12:56:48', '2010-04-21 01:40:34', 'imhugo', 12281075530, NULL, 'SHiFT is starting with some delay and with some low mood, I might say... Manuel Heitor on stage right now #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12280597351) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/763292443/Selah_2_-_Copy_normal.jpg
+created_at: Fri, 16 Apr 2010 12:46:14 +0000
+from_user: candicebenbow
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: Actually no. The other 2 other artists are at a conf too. Plus- I had to shift my focus to the BirthRight launch (cont) http://tl.gd/svkj4
+id: 12280597351
+from_user_id: 7872665
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://ubertwitter.com&quot; rel=&quot;nofollow&quot;&gt;UberTwitter&lt;/a&gt;"
+', '2010-04-16 12:46:14', '2010-04-21 01:40:34', 'candicebenbow', 12280597351, NULL, 'Actually no. The other 2 other artists are at a conf too. Plus- I had to shift my focus to the BirthRight launch (cont) http://tl.gd/svkj4')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12278817223) LIMIT 1[0m
+  [4;35;1mTweet Create (0.6ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/80403662/Photo_2_normal.jpg
+created_at: Fri, 16 Apr 2010 12:04:34 +0000
+from_user: imhugo
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "On my way to SHiFT with some @active_media folks #shiftconf"
+id: 12278817223
+from_user_id: 4835964
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweets60.com&quot; rel=&quot;nofollow&quot;&gt;Tweets60&lt;/a&gt;"
+', '2010-04-16 12:04:34', '2010-04-21 01:40:34', 'imhugo', 12278817223, NULL, 'On my way to SHiFT with some @active_media folks #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12275356971) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/558165343/no_echo_twitter_normal.png
+created_at: Fri, 16 Apr 2010 10:26:07 +0000
+from_user: paulo_ribeiro
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @Feba: attending Ricardo Tom\xC3\xA9 workshop about how to do a tv show while walking around (http://2010.shift.pt/talk/show/120) #shift2010"
+id: 12275356971
+from_user_id: 5369545
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-16 10:26:07', '2010-04-21 01:40:34', 'paulo_ribeiro', 12275356971, NULL, 'RT @Feba: attending Ricardo Tomé workshop about how to do a tv show while walking around (http://2010.shift.pt/talk/show/120) #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12275025961) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/62814875/simon_normal.jpg
+created_at: Fri, 16 Apr 2010 10:15:08 +0000
+from_user: Simon
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @Feba: attending Ricardo Tom\xC3\xA9 workshop about how to do a tv show while walking around (http://2010.shift.pt/talk/show/120) #shift2010"
+id: 12275025961
+from_user_id: 87045
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-16 10:15:08', '2010-04-21 01:40:34', 'Simon', 12275025961, NULL, 'RT @Feba: attending Ricardo Tomé workshop about how to do a tv show while walking around (http://2010.shift.pt/talk/show/120) #shift2010')[0m
+  [4;36;1mTweet Load (1.0ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12274957568) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/559788421/ivo-mtvs-branded_normal.png
+created_at: Fri, 16 Apr 2010 10:12:49 +0000
+from_user: ivogomes
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "\xC3\x89 pena que este ano n\xC3\xA3o possa estar presente na SHiFT, mas neste momento h\xC3\xA1 coisas mais importantes a tratar. #shiftconf"
+id: 12274957568
+from_user_id: 2385
+geo: 
+iso_language_code: pt
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-16 10:12:49', '2010-04-21 01:40:34', 'ivogomes', 12274957568, NULL, 'É pena que este ano não possa estar presente na SHiFT, mas neste momento há coisas mais importantes a tratar. #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12274952511) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/49296962/luca_normal.JPG
+created_at: Fri, 16 Apr 2010 10:12:39 +0000
+from_user: perugini
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @Feba: attending Ricardo Tom\xC3\xA9 workshop about how to do a tv show while walking around (http://2010.shift.pt/talk/show/120) #shift2010"
+id: 12274952511
+from_user_id: 569
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-16 10:12:39', '2010-04-21 01:40:34', 'perugini', 12274952511, NULL, 'RT @Feba: attending Ricardo Tomé workshop about how to do a tv show while walking around (http://2010.shift.pt/talk/show/120) #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12274931618) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/709788445/DSC_0019_normal.jpg
+created_at: Fri, 16 Apr 2010 10:11:57 +0000
+from_user: Feba
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "attending Ricardo Tom\xC3\xA9 workshop about how to do a tv show while walking around (http://2010.shift.pt/talk/show/120) #shift2010"
+id: 12274931618
+from_user_id: 19353
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-16 10:11:57', '2010-04-21 01:40:34', 'Feba', 12274931618, NULL, 'attending Ricardo Tomé workshop about how to do a tv show while walking around (http://2010.shift.pt/talk/show/120) #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12248607214) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/16731712/picture-1771_normal.gif
+created_at: Thu, 15 Apr 2010 22:47:38 +0000
+from_user: sergio
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @active_media: um dos contemplados com um bilhete para a Shift n\xC3\xA3o pode vir e agora temos mais uma entrada? Quem quer ir? #fb #shiftconf"
+id: 12248607214
+from_user_id: 199113
+geo: 
+iso_language_code: pt
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-15 22:47:38', '2010-04-21 01:40:34', 'sergio', 12248607214, NULL, 'RT @active_media: um dos contemplados com um bilhete para a Shift não pode vir e agora temos mais uma entrada? Quem quer ir? #fb #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12241596447) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/712348719/logo4_bigger_normal.jpg
+created_at: Thu, 15 Apr 2010 20:06:34 +0000
+from_user: thinkorangept
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "see you all tomorrow at SHiFT, we''ll be around and we have a special gift for everyone. #shift2010"
+id: 12241596447
+from_user_id: 3428464
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-15 20:06:34', '2010-04-21 01:40:34', 'thinkorangept', 12241596447, NULL, 'see you all tomorrow at SHiFT, we''ll be around and we have a special gift for everyone. #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12239065194) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/56072168/daniel_48x48_normal.png
+created_at: Thu, 15 Apr 2010 19:07:21 +0000
+from_user: dbarradas
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @corefactor: All of the @corefactor''s web team gonna be at @SHiFTconf (www.shift.pt) tomorrow. Will you be there? :) #shift10"
+id: 12239065194
+from_user_id: 825059
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;"
+', '2010-04-15 19:07:21', '2010-04-21 01:40:34', 'dbarradas', 12239065194, NULL, 'RT @corefactor: All of the @corefactor''s web team gonna be at @SHiFTconf (www.shift.pt) tomorrow. Will you be there? :) #shift10')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12239023577) LIMIT 1[0m
+  [4;35;1mTweet Create (0.4ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/440627064/mugshot_normal.jpg
+created_at: Thu, 15 Apr 2010 19:06:20 +0000
+from_user: hugobaeta
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @corefactor: All of the @corefactor''s web team gonna be at @SHiFTconf (www.shift.pt) tomorrow. Will you be there? :)"
+id: 12239023577
+from_user_id: 41465909
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;"
+', '2010-04-15 19:06:20', '2010-04-21 01:40:34', 'hugobaeta', 12239023577, NULL, 'RT @corefactor: All of the @corefactor''s web team gonna be at @SHiFTconf (www.shift.pt) tomorrow. Will you be there? :)')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12239001497) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/705427550/corefactor_twitter_avatar_normal.png
+created_at: Thu, 15 Apr 2010 19:05:48 +0000
+from_user: corefactor
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: All of the @corefactor''s web team gonna be at @SHiFTconf (www.shift.pt) tomorrow. Will you be there? :)
+id: 12239001497
+from_user_id: 10706342
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;"
+', '2010-04-15 19:05:48', '2010-04-21 01:40:34', 'corefactor', 12239001497, NULL, 'All of the @corefactor''s web team gonna be at @SHiFTconf (www.shift.pt) tomorrow. Will you be there? :)')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12238248121) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/759879182/jorgeoliveira2009_normal.jpg
+created_at: Thu, 15 Apr 2010 18:47:48 +0000
+from_user: JorgeOliveira
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @active_media: um dos contemplados com um bilhete para a Shift n\xC3\xA3o pode vir e agora temos mais uma entrada? Quem quer ir? #fb #shiftconf"
+id: 12238248121
+from_user_id: 1717135
+geo: 
+iso_language_code: pt
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-15 18:47:48', '2010-04-21 01:40:34', 'JorgeOliveira', 12238248121, NULL, 'RT @active_media: um dos contemplados com um bilhete para a Shift não pode vir e agora temos mais uma entrada? Quem quer ir? #fb #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12238061456) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/80582846/logo150_150_normal.png
+created_at: Thu, 15 Apr 2010 18:43:16 +0000
+from_user: active_media
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "um dos contemplados com um bilhete para a Shift n\xC3\xA3o pode vir e agora temos mais uma entrada? Quem quer ir? #fb #shiftconf"
+id: 12238061456
+from_user_id: 3928809
+geo: 
+iso_language_code: pt
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-15 18:43:16', '2010-04-21 01:40:34', 'active_media', 12238061456, NULL, 'um dos contemplados com um bilhete para a Shift não pode vir e agora temos mais uma entrada? Quem quer ir? #fb #shiftconf')[0m
+  [4;36;1mTweet Load (0.3ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12228176767) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/724732579/Untitled-C_normal.png
+created_at: Thu, 15 Apr 2010 15:12:43 +0000
+from_user: vd
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: which followers are going to shift conf tomorrow?
+id: 12228176767
+from_user_id: 770
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://dabr.co.uk&quot; rel=&quot;nofollow&quot;&gt;dabr&lt;/a&gt;"
+', '2010-04-15 15:12:43', '2010-04-21 01:40:36', 'vd', 12228176767, NULL, 'which followers are going to shift conf tomorrow?')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12227297501) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/479496944/n791378487_1813581_280_normal.jpg
+created_at: Thu, 15 Apr 2010 14:56:09 +0000
+from_user: L_Spencer
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 777306
+text: "@mfaisco Nope - I''m staying here for the Shift Conf :) Vais?"
+id: 12227297501
+from_user_id: 1450839
+to_user: mfaisco
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-15 14:56:09', '2010-04-21 01:40:36', 'L_Spencer', 12227297501, NULL, '@mfaisco Nope - I''m staying here for the Shift Conf :) Vais?')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12217795329) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/427281819/avatar1_normal.jpg
+created_at: Thu, 15 Apr 2010 11:39:50 +0000
+from_user: psousa
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "awesome! RT @thinkorangept: Our gift for the SHiFT welcome pack has arrived. Sneak peek: http://bit.ly/90xfn6 #shiftconf"
+id: 12217795329
+from_user_id: 24022
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-15 11:39:50', '2010-04-21 01:40:36', 'psousa', 12217795329, NULL, 'awesome! RT @thinkorangept: Our gift for the SHiFT welcome pack has arrived. Sneak peek: http://bit.ly/90xfn6 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12217755449) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/712348719/logo4_bigger_normal.jpg
+created_at: Thu, 15 Apr 2010 11:38:43 +0000
+from_user: thinkorangept
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "Our gift for the SHiFT welcome pack has arrived. Sneak peek: http://bit.ly/90xfn6 #shiftconf"
+id: 12217755449
+from_user_id: 3428464
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-15 11:38:43', '2010-04-21 01:40:36', 'thinkorangept', 12217755449, NULL, 'Our gift for the SHiFT welcome pack has arrived. Sneak peek: http://bit.ly/90xfn6 #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12217670299) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/709788445/DSC_0019_normal.jpg
+created_at: Thu, 15 Apr 2010 11:36:19 +0000
+from_user: Feba
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 527292
+text: "@shiftconf last (golden) one, &quot;ciao e benvenuti a shift 2010&quot; :)"
+id: 12217670299
+from_user_id: 19353
+to_user: shiftconf
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://twitter.com/&quot;&gt;web&lt;/a&gt;"
+', '2010-04-15 11:36:19', '2010-04-21 01:40:36', 'Feba', 12217670299, NULL, '@shiftconf last (golden) one, &quot;ciao e benvenuti a shift 2010&quot; :)')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12216202122) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/548719735/twitterProfilePhoto_normal.jpg
+created_at: Thu, 15 Apr 2010 10:53:17 +0000
+from_user: vascellari
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @itive SHiFT is about sharing ideas and helping to change minds - http://bit.ly/shift10 @SHiFTconf #shiftconf"
+id: 12216202122
+from_user_id: 12236
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-15 10:53:17', '2010-04-21 01:40:36', 'vascellari', 12216202122, NULL, 'RT @itive SHiFT is about sharing ideas and helping to change minds - http://bit.ly/shift10 @SHiFTconf #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12216186947) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/57157128/iTive-icon1_normal.png
+created_at: Thu, 15 Apr 2010 10:52:48 +0000
+from_user: itive
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT is about sharing ideas and helping to change minds - http://bit.ly/shift10 @SHiFTconf #shiftconf"
+id: 12216186947
+from_user_id: 182387
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-15 10:52:48', '2010-04-21 01:40:36', 'itive', 12216186947, NULL, 'SHiFT is about sharing ideas and helping to change minds - http://bit.ly/shift10 @SHiFTconf #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12215971865) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/673991757/Untitled_normal.jpg
+created_at: Thu, 15 Apr 2010 10:45:55 +0000
+from_user: gentthaqi
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "#SHiFT2010 is going to take place tomorrow in Lisbon http://2010.shift.pt/"
+id: 12215971865
+from_user_id: 74887037
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://echofon.com/&quot; rel=&quot;nofollow&quot;&gt;Echofon&lt;/a&gt;"
+', '2010-04-15 10:45:55', '2010-04-21 01:40:36', 'gentthaqi', 12215971865, NULL, '#SHiFT2010 is going to take place tomorrow in Lisbon http://2010.shift.pt/')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12214785250) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/489768189/AnaTwitter2_normal.jpg
+created_at: Thu, 15 Apr 2010 10:06:13 +0000
+from_user: AnaDataGirl
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "&lt;3 &lt;3 &lt;3 SHIFT (I speak the language of love :) ) #shift2010"
+id: 12214785250
+from_user_id: 10239779
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-15 10:06:13', '2010-04-21 01:40:36', 'AnaDataGirl', 12214785250, NULL, '&lt;3 &lt;3 &lt;3 SHIFT (I speak the language of love :) ) #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12188585359) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/774727907/DSC_7833_small_sq_normal.jpg
+created_at: Wed, 14 Apr 2010 22:50:33 +0000
+from_user: pedrocustodio
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @psousa: SHiFT 2008 in 18 photos: http://twurl.nl/xpq1ki #shiftconf #shift08"
+id: 12188585359
+from_user_id: 17942
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-14 22:50:33', '2010-04-21 01:40:36', 'pedrocustodio', 12188585359, NULL, 'RT @psousa: SHiFT 2008 in 18 photos: http://twurl.nl/xpq1ki #shiftconf #shift08')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12188263926) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/427281819/avatar1_normal.jpg
+created_at: Wed, 14 Apr 2010 22:43:26 +0000
+from_user: psousa
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT 2008 in 18 photos: http://twurl.nl/xpq1ki #shiftconf #shift08"
+id: 12188263926
+from_user_id: 24022
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.seesmic.com/&quot; rel=&quot;nofollow&quot;&gt;Seesmic&lt;/a&gt;"
+', '2010-04-14 22:43:26', '2010-04-21 01:40:36', 'psousa', 12188263926, NULL, 'SHiFT 2008 in 18 photos: http://twurl.nl/xpq1ki #shiftconf #shift08')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12183385475) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/776923954/brandy_agerbeck_avatar200_normal.gif
+created_at: Wed, 14 Apr 2010 20:51:28 +0000
+from_user: loosetooth
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: excited 2 B GFing a wrkshp @ IAF conf in Chicago nxt Thr w/@pmeyerphd on the mindset shift from workplace 2 playspace http://ow.ly/1yyt8
+id: 12183385475
+from_user_id: 5648090
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;"
+', '2010-04-14 20:51:28', '2010-04-21 01:40:36', 'loosetooth', 12183385475, NULL, 'excited 2 B GFing a wrkshp @ IAF conf in Chicago nxt Thr w/@pmeyerphd on the mindset shift from workplace 2 playspace http://ow.ly/1yyt8')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12172029038) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/433211163/kxhlift_normal.jpg
+created_at: Wed, 14 Apr 2010 16:29:16 +0000
+from_user: xhakli
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT conference starting soon. Schedule is here: http://2010.shift.pt/page/schedule follow #shift2010"
+id: 12172029038
+from_user_id: 100882
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.atebits.com/&quot; rel=&quot;nofollow&quot;&gt;Tweetie&lt;/a&gt;"
+', '2010-04-14 16:29:16', '2010-04-21 01:40:36', 'xhakli', 12172029038, NULL, 'SHiFT conference starting soon. Schedule is here: http://2010.shift.pt/page/schedule follow #shift2010')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12165812855) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/461261538/DSC_2537_8x8___normal.jpg
+created_at: Wed, 14 Apr 2010 14:25:10 +0000
+from_user: pmeyerphd
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: excited 2 B leading a wrkshp at IAF conf in Chicago nxt Thr w/@loosetooth on the mindset shift from workplace 2 playspace http://ow.ly/1xRyP
+id: 12165812855
+from_user_id: 2048840
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;"
+', '2010-04-14 14:25:10', '2010-04-21 01:40:36', 'pmeyerphd', 12165812855, NULL, 'excited 2 B leading a wrkshp at IAF conf in Chicago nxt Thr w/@loosetooth on the mindset shift from workplace 2 playspace http://ow.ly/1xRyP')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12163656689) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/551827940/sarppa0709_normal.jpg
+created_at: Wed, 14 Apr 2010 13:41:24 +0000
+from_user: saaralaaksonen
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @itive: SHiFT is all about rethinking the present and planning for the future. - http://bit.ly/shift10 @SHiFTconf #shiftconf"
+id: 12163656689
+from_user_id: 183732
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-14 13:41:24', '2010-04-21 01:40:36', 'saaralaaksonen', 12163656689, NULL, 'RT @itive: SHiFT is all about rethinking the present and planning for the future. - http://bit.ly/shift10 @SHiFTconf #shiftconf')[0m
+  [4;36;1mTweet Load (0.3ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12159294664) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/548719735/twitterProfilePhoto_normal.jpg
+created_at: Wed, 14 Apr 2010 12:03:04 +0000
+from_user: vascellari
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @itive SHiFT is all about rethinking the present and planning for the future. - http://bit.ly/shift10 @SHiFTconf #shiftconf"
+id: 12159294664
+from_user_id: 12236
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-14 12:03:04', '2010-04-21 01:40:38', 'vascellari', 12159294664, NULL, 'RT @itive SHiFT is all about rethinking the present and planning for the future. - http://bit.ly/shift10 @SHiFTconf #shiftconf')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12159265740) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/57157128/iTive-icon1_normal.png
+created_at: Wed, 14 Apr 2010 12:02:20 +0000
+from_user: itive
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT is all about rethinking the present and planning for the future. - http://bit.ly/shift10 @SHiFTconf #shiftconf"
+id: 12159265740
+from_user_id: 182387
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-14 12:02:20', '2010-04-21 01:40:38', 'itive', 12159265740, NULL, 'SHiFT is all about rethinking the present and planning for the future. - http://bit.ly/shift10 @SHiFTconf #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12120064321) LIMIT 1[0m
+  [4;35;1mTweet Create (0.5ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/789569362/Screen_shot_2010-03-28_at_10.46.02_PM_4_normal.png
+created_at: Tue, 13 Apr 2010 19:25:05 +0000
+from_user: ADHumlen
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 9251046
+text: "@BCCCC ''s annual conf. #Corporate #Cause leaders discuss shift fr. \xE2\x80\x98philanthropy\xE2\x80\x99 to strat relevance RT @ConeLLC: http://bit.ly/bRxYmf #csr"
+id: 12120064321
+from_user_id: 44940968
+to_user: BCCCC
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.hootsuite.com&quot; rel=&quot;nofollow&quot;&gt;HootSuite&lt;/a&gt;"
+', '2010-04-13 19:25:05', '2010-04-21 01:40:38', 'ADHumlen', 12120064321, NULL, '@BCCCC ''s annual conf. #Corporate #Cause leaders discuss shift fr. ‘philanthropy’ to strat relevance RT @ConeLLC: http://bit.ly/bRxYmf #csr')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12115413512) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/458181714/pic_normal.jpg
+created_at: Tue, 13 Apr 2010 17:33:29 +0000
+from_user: virginiacp
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @armandoalves: RT @SHiFTconf: SHiFT 2010 come and join us this week! Schedule is already live featuring 27 sessions and 4 workshops -&gt; http://bit.ly/9j6qEu"
+id: 12115413512
+from_user_id: 6292746
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-13 17:33:29', '2010-04-21 01:40:38', 'virginiacp', 12115413512, NULL, 'RT @armandoalves: RT @SHiFTconf: SHiFT 2010 come and join us this week! Schedule is already live featuring 27 sessions and 4 workshops -&gt; http://bit.ly/9j6qEu')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12115352052) LIMIT 1[0m
+  [4;35;1mTweet Create (0.3ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/566591525/avatar-blue_normal.jpg
+created_at: Tue, 13 Apr 2010 17:32:08 +0000
+from_user: armandoalves
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @SHiFTconf: SHiFT 2010 come and join us this week! Schedule is already live featuring 27 sessions and 4 workshops -&gt; http://bit.ly/9j6qEu"
+id: 12115352052
+from_user_id: 57412
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-13 17:32:08', '2010-04-21 01:40:38', 'armandoalves', 12115352052, NULL, 'RT @SHiFTconf: SHiFT 2010 come and join us this week! Schedule is already live featuring 27 sessions and 4 workshops -&gt; http://bit.ly/9j6qEu')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12115149121) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/551827940/sarppa0709_normal.jpg
+created_at: Tue, 13 Apr 2010 17:27:35 +0000
+from_user: saaralaaksonen
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @itive: SHiFT is about opening a dialogue for questions that are on people''s minds - http://bit.ly/shift10 @SHiFTconf #shiftconf"
+id: 12115149121
+from_user_id: 183732
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-13 17:27:35', '2010-04-21 01:40:38', 'saaralaaksonen', 12115149121, NULL, 'RT @itive: SHiFT is about opening a dialogue for questions that are on people''s minds - http://bit.ly/shift10 @SHiFTconf #shiftconf')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12115068240) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/548719735/twitterProfilePhoto_normal.jpg
+created_at: Tue, 13 Apr 2010 17:25:44 +0000
+from_user: vascellari
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @itive SHiFT is about opening a dialogue for questions that are on people''s minds - http://bit.ly/shift10 @SHiFTconf #shiftconf"
+id: 12115068240
+from_user_id: 12236
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-13 17:25:44', '2010-04-21 01:40:38', 'vascellari', 12115068240, NULL, 'RT @itive SHiFT is about opening a dialogue for questions that are on people''s minds - http://bit.ly/shift10 @SHiFTconf #shiftconf')[0m
+  [4;36;1mTweet Load (0.1ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12115024897) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a1.twimg.com/profile_images/57157128/iTive-icon1_normal.png
+created_at: Tue, 13 Apr 2010 17:24:46 +0000
+from_user: itive
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "SHiFT is about opening a dialogue for questions that are on people''s minds - http://bit.ly/shift10 @SHiFTconf #shiftconf"
+id: 12115024897
+from_user_id: 182387
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://www.tweetdeck.com&quot; rel=&quot;nofollow&quot;&gt;TweetDeck&lt;/a&gt;"
+', '2010-04-13 17:24:46', '2010-04-21 01:40:38', 'itive', 12115024897, NULL, 'SHiFT is about opening a dialogue for questions that are on people''s minds - http://bit.ly/shift10 @SHiFTconf #shiftconf')[0m
+  [4;36;1mTweet Load (0.2ms)[0m   [0;1mSELECT * FROM "tweets" WHERE ("tweets"."twitter_id" = 12110617061) LIMIT 1[0m
+  [4;35;1mTweet Create (0.2ms)[0m   [0mINSERT INTO "tweets" ("full_tweet", "created_at", "updated_at", "username", "twitter_id", "published_at", "status") VALUES('--- !map:HashWithIndifferentAccess 
+profile_image_url: http://a3.twimg.com/profile_images/724732579/Untitled-C_normal.png
+created_at: Tue, 13 Apr 2010 15:51:37 +0000
+from_user: vd
+metadata: !map:HashWithIndifferentAccess 
+ result_type: recent
+to_user_id: 
+text: "RT @thenextwebpt Do It Yourself \xE2\x80\xA6 at SHiFT 2010; Lisbon, 16 &amp; 17 of April http://tnw.to/15x21 #shift2010 #shiftconf"
+id: 12110617061
+from_user_id: 770
+geo: 
+iso_language_code: en
+source: "&lt;a href=&quot;http://tweetmeme.com&quot; rel=&quot;nofollow&quot;&gt;TweetMeme&lt;/a&gt;"
+', '2010-04-13 15:51:37', '2010-04-21 01:40:38', 'vd', 12110617061, NULL, 'RT @thenextwebpt Do It Yourself … at SHiFT 2010; Lisbon, 16 &amp; 17 of April http://tnw.to/15x21 #shift2010 #shiftconf')[0m
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-04-21 02:40:53) [GET]
+  [4;36;1mTweet Load (11.7ms)[0m   [0;1mSELECT * FROM "tweets" [0m
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 231ms (View: 213, DB: 12) | 200 OK [http://localhost/]
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-04-21 02:58:10) [GET]
+  [4;35;1mTweet Load (10.8ms)[0m   [0mSELECT * FROM "tweets" [0m
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 68ms (View: 49, DB: 11) | 200 OK [http://localhost/]
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-04-21 02:58:22) [GET]
+  [4;36;1mTweet Load (10.1ms)[0m   [0;1mSELECT * FROM "tweets" [0m
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 123ms (View: 106, DB: 10) | 200 OK [http://localhost/]
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-04-21 02:58:36) [GET]
+  [4;35;1mTweet Load (10.3ms)[0m   [0mSELECT * FROM "tweets" [0m
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 52ms (View: 31, DB: 10) | 200 OK [http://localhost/]
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-04-21 02:59:55) [GET]
+  [4;36;1mTweet Load (8.3ms)[0m   [0;1mSELECT * FROM "tweets" [0m
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 47ms (View: 31, DB: 8) | 200 OK [http://localhost/]
+
+
+Processing TweetsController#index (for 127.0.0.1 at 2010-04-21 03:00:36) [GET]
+  [4;35;1mTweet Load (70.4ms)[0m   [0mSELECT * FROM "tweets" [0m
+Rendering template within layouts/tweets
+Rendering tweets/index
+Completed in 125ms (View: 48, DB: 70) | 200 OK [http://localhost/]

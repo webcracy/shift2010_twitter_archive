@@ -1,0 +1,9 @@
+%h1 SHiFT Conference 2010 - the Twitter Archive
+- for tweet in @tweets
+  .tweet
+    .main
+      %span.username= tweet.username
+      %span.status= auto_mentions_and_hashtags(auto_link(tweet.status))
+    .meta
+      %span.created_at
+        %a{:href => "http://twitter.com/#{tweet.username}/statuses/#{tweet.twitter_id}"}= tweet.created_at.strftime('%d/%m/%Y at %I:%M%p')

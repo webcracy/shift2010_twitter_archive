@@ -1,0 +1,22 @@
+h1. SHiFT Conference 2010 Twitter Archive
+
+h2. Instructions
+
+* The DB is full of tweets at this point, so all you need to do in run the server to see the Tweet archive. 
+* Maybe you should try rake gems:install because Mashie is required
+* You can edit app/views/index.html.haml to customize how the view is generated. 
+* To make a static html file, just save the source you're viewing in your browser :)
+
+* There's a static file already saved in public/archive_by_alex.html (but you might dislike the simplistic html)
+
+h2. What code is there to see?
+
+* If you wanted to poke around, you'd see there's only one Model (Tweet) that was scaffolded. 
+* The data was populated using the minimal script in db/seed.rb (and by running rake db:seed -- you shouldn't do this anymore)
+* A helper method was created to generate links for hashtags and @mentions
+* index.html was removed, root route was directed to meets_controller
+* guess that's it
+
+h2. Have fun
+
+You read me.
